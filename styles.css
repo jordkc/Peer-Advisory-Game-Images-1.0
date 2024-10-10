@@ -1,0 +1,85 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(120deg, #F5DEB3, #FAEBD7);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.deck {
+    background-color: darkred; /* Scenario Buttons */
+    color: white;
+    padding: 16px 8px;
+    margin: 0 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    width: 125px;
+    height: 50px; /* Adjust height to make the deck buttons more visible */
+}
+
+.deck:hover {
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+#scenario-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allow scenario images to wrap if needed */
+}
+
+.scenario-box {
+    /* Remove background, padding, and text styling */
+    background-color: transparent;
+    padding: 0;
+    width: 500px;
+    height: 400px;
+    margin: 10px;
+    box-shadow: none; /* Remove box shadow */
+}
+
+.scenario-box img {
+    width: 250px; /* Adjust the size of the image */
+    height: auto;
+    border-radius: 10px;
+}
+
+#response-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allow response images to wrap if needed */
+}
+
+.response-card {
+    /* Remove background, padding, and text styling */
+    background-color: transparent;
+    padding: 0;
+    width: auto;
+    height: auto;
+    margin: 10px;
+    box-shadow: none; /* Remove box shadow */
+    cursor: pointer;
+}
+
+.response-card img {
+    width: auto; /* Adjust the size of the image */
+    height: 300px;
+    border-radius: 10px;
+}
